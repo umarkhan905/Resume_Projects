@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.search_container {
+  padding: 20px 0;
+}
+
+.search_container input {
+  padding: 6px 10px;
+  width: 300px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background: #f0f0f0;
+}
+
+.search_container .search_btn {
+  padding: 6px 20px;
+  height: 40px;
+  margin: 0 3px;
+  border: none;
+  outline: none;
+  background: #56ec72;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 5px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.images_container {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 5px;
+}
+
+.card_container {
+  width: 300px;
+  height: 310px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2), -1px -1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.card_container img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card_container .user {
+  color: purple;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 2px 10px;
+}
+
+.card_container .views,
+.card_container .downloads {
+  color: #222;
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: capitalize;
+  padding: 0 10px;
+}
+
+.card_container .tags {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 10px;
+}
+
+.card_container .tags .tag {
+  background: #f5f4f4;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #333;
+}
+
+.load_more_btn {
+  display: block;
+  margin: 10px auto;
+  width: 73%;
+  height: 50px;
+  font-size: 18px;
+  border: 1px solid #fff;
+  background: #f5f4f4;
+  cursor: pointer;
+  font-weight: 500;
+  border-radius: 5px;
+}

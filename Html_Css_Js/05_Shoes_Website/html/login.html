@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UK-STORE</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/c3d319de8a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://accounts.google.com/gsi/client" async></script>
+    <script src="/js/app.js" type="module" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="intro">
+        <p>New here? Save your 50% with code: YR24</p>
+      </div>
+      <nav class="container navbar">
+        <div class="nav_left">
+          <div class="logo">
+            <div class="brand">
+              <img src="Images/logo.png" width="35" height="35" alt="" />
+            </div>
+            <p>UK<br /><span>STORE</span></p>
+          </div>
+          <ul class="nav_list">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="shop.html">Shop</a></li>
+          </ul>
+        </div>
+        <div class="nav_right">
+          <ul class="nav_list">
+            <li class="shopping_bag">
+              <a href="cart.html"
+                ><i class="fa-solid fa-bag-shopping"></i><span></span
+              ></a>
+            </li>
+            <li class="wishlist_bag">
+              <a href="wishlist.html"
+                ><i class="fa-regular fa-heart"></i><span></span
+              ></a>
+            </li>
+            <li>
+              <a href="login.html"><i class="fa-regular fa-user"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section class="hamburger sticky">
+        <section class="hamburger_nav">
+          <div class="left_side">
+            <ul class="nav_list">
+              <li class="ham_shopping_bag">
+                <a href="cart.html"
+                  ><i class="fa-solid fa-bag-shopping"></i><span></span
+                ></a>
+              </li>
+              <li class="ham_wishlist_bag">
+                <a href="wishlist.html"
+                  ><i class="fa-regular fa-heart"></i><span></span
+                ></a>
+              </li>
+              <li>
+                <a href="login.html"><i class="fa-regular fa-user"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="right_side hamburger_btn">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </section>
+        <section class="hamburger_menu">
+          <div class="logo">
+            <div class="brand">
+              <img src="Images/logo.png" width="35" height="35" alt="" />
+            </div>
+            <p>UK<br /><span>STORE</span></p>
+          </div>
+
+          <ul class="ham_menu_list">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="shop.html">Shop</a></li>
+          </ul>
+        </section>
+      </section>
+    </header>
+
+    <main>
+      <section class="login_form container">
+        <div class="left_side">
+          <h1>Welcome to <span>UK STORE</span></h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+            neque consequatur praesentium! Perspiciatis natus iste, totam
+            exercitationem nihil sit laborum?
+          </p>
+        </div>
+        <form action="">
+          <h1>Login</h1>
+          <div class="form_group email">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              autocomplete="off"
+            />
+            <label for="email">Email</label>
+          </div>
+          <div class="form_group password">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              required
+              autocomplete="off"
+            />
+            <label for="password">Password</label>
+          </div>
+          <div class="forgot_password form_group">
+            <a href="#">Forgot password?</a>
+          </div>
+          <div class="form_group remember_me">
+            <input type="checkbox" name="remember" id="remember" />
+            <label for="remember">Remember me</label>
+          </div>
+          <p>Don't have an account yet? <a href="signup.html">Sign Up</a></p>
+          <div class="form_group">
+            <input type="submit" value="Login" />
+          </div>
+          <div class="form_group">
+            <p>Or link with social accounts</p>
+            <div
+              id="g_id_onload"
+              data-client_id="268048116411-16vvfju11j2c888fnetvd8p5omtd9c91.apps.googleusercontent.com"
+              data-login_uri="http://localhost/html/login.html"
+              data-auto_prompt="false"
+            ></div>
+            <div
+              class="g_id_signin"
+              data-type="standard"
+              data-size="large"
+              data-theme="outline"
+              data-text="sign_in_with"
+              data-shape="rectangular"
+              data-logo_alignment="left"
+            ></div>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <nav class="container footer_container">
+        <h2>UK STORE</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+          repudiandae voluptatibus, rerum blanditiis eius id fuga? Blanditiis
+          quod dolorum odio, consequuntur maiores aut pariatur veritatis, esse
+          id minima, veniam earum. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Quos tempora dolore, veritatis quia quasi
+          voluptatibus officiis aliquid. Quisquam, nam consequatur?
+        </p>
+        <div class="social_icons">
+          <div class="icon"><i class="fa-brands fa-facebook-f"></i></div>
+          <div class="icon"><i class="fa-brands fa-x-twitter"></i></div>
+          <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+          <div class="icon"><i class="fa-brands fa-google"></i></div>
+        </div>
+      </nav>
+      <section class="newsletter">
+        <input type="email" placeholder="Enter your email" />
+        <button>
+          Subscribe <span><i class="fa-solid fa-paper-plane"></i></span>
+        </button>
+      </section>
+    </footer>
+  </body>
+</html>

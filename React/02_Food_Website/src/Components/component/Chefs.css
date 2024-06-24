@@ -1,0 +1,79 @@
+.chef-container {
+    width: 100%;
+    padding: 20px 0;
+    background: url(../assets/chefbg.jpg);
+    /* height: 500px; */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* .heading{
+    color: #000;
+} */
+.cards-container {
+    width: 80%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    padding: 20px 30px;
+    gap: 20px;
+}
+
+.chef-card {
+    width: 200px;
+    height: 300px;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border: 3px solid orangered;
+    position: relative;
+    overflow: hidden;
+    transition: all .2s;
+}
+
+.chef-card img {
+    display: block;
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.chef-card .about {
+    width: 100%;
+    height: 60px;
+    border-top: 3px solid orangered;
+    background: #fff;
+    position: absolute;
+    padding: 5px 10px;
+    text-align: center;
+    transition: all .5s;
+    text-transform: capitalize;
+    color: #222;
+}
+
+.chef-card .about:hover {
+    height: 120px;
+    bottom: 0;
+}
+
+.chef-card .about p {
+    padding: 5px 0;
+    color: grey;
+    font-size: .9rem;
+}
+
+.chef-card .about hr {
+    margin: 5px auto;
+}
+
+.social-links {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    width: 55%;
+    cursor: pointer;
+    margin: auto;
+}

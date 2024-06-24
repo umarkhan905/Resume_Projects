@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+
+* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+*::selection {
+  background: #ff4500;
+  color: #fff;
+}
+
+.padding {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

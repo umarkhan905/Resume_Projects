@@ -1,0 +1,25 @@
+.heading{
+    text-align: center;
+    font-size: 1.8rem;
+    color: orangered;
+    text-transform: capitalize;
+    position: relative;
+}
+.heading::after{
+    content: '';
+    width: 150px;
+    height: 2px;
+    background: orangered;
+    position: absolute;
+    top: 99%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+.padding-bottom{
+    padding-bottom: 5px;
+}
+hr{
+    width: 90%;
+    margin: auto;
+}

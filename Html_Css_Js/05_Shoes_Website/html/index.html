@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UK-STORE</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/data.js" type="module" defer></script>
+    <script src="../js/index.js" type="module" defer></script>
+    <script src="../js/app.js" type="module" defer></script>
+    <script src="../js/swiper.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/c3d319de8a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="intro">
+        <p>New here? Save your 50% with code: YR24</p>
+      </div>
+      <nav class="container navbar">
+        <div class="nav_left">
+          <div class="logo">
+            <div class="brand">
+              <img src="Images/logo.png" width="35" height="35" alt="" />
+            </div>
+            <p>UK<br /><span>STORE</span></p>
+          </div>
+          <ul class="nav_list">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="shop.html">Shop</a></li>
+          </ul>
+        </div>
+        <div class="nav_right">
+          <ul class="nav_list">
+            <li class="shopping_bag">
+              <a href="cart.html"
+                ><i class="fa-solid fa-bag-shopping"></i><span></span
+              ></a>
+            </li>
+            <li class="wishlist_bag">
+              <a href="wishlist.html"
+                ><i class="fa-regular fa-heart"></i><span></span
+              ></a>
+            </li>
+            <li>
+              <a href="login.html"><i class="fa-regular fa-user"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section class="hamburger sticky">
+        <section class="hamburger_nav">
+          <div class="left_side">
+            <ul class="nav_list">
+              <li class="ham_shopping_bag">
+                <a href="cart.html"
+                  ><i class="fa-solid fa-bag-shopping"></i><span></span
+                ></a>
+              </li>
+              <li class="ham_wishlist_bag">
+                <a href="wishlist.html"
+                  ><i class="fa-regular fa-heart"></i><span></span
+                ></a>
+              </li>
+              <li>
+                <a href="login.html"><i class="fa-regular fa-user"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="right_side hamburger_btn">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </section>
+        <section class="hamburger_menu">
+          <div class="logo">
+            <div class="brand">
+              <img src="Images/logo.png" width="35" height="35" alt="" />
+            </div>
+            <p>UK<br /><span>STORE</span></p>
+          </div>
+
+          <ul class="ham_menu_list">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="shop.html">Shop</a></li>
+          </ul>
+        </section>
+      </section>
+    </header>
+
+    <main>
+      <!-- ~ Hero Section Start -->
+      <section class="slider swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="Images/hero.png" alt="" /></div>
+          <div class="swiper-slide"><img src="Images/hero1.png" alt="" /></div>
+          <div class="swiper-slide"><img src="Images/hero2.png" alt="" /></div>
+          <div class="swiper-slide"><img src="Images/hero3.png" alt="" /></div>
+          <div class="swiper-slide"><img src="Images/hero4.png" alt="" /></div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </section>
+      <section class="hero_section">
+        <div class="hero_text">
+          <h1>
+            <span>UK STORE</span><br />
+            The Best Shoes Selling Online Store
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+            sint cupiditate. Et expedita dolorem culpa sapiente, perferendis
+            fuga eius, ullam iure maiores delectus a praesentium, nulla hic
+            aperiam minima possimus.
+          </p>
+          <button>Shop now</button>
+        </div>
+      </section>
+      <!-- ~ Hero Section End -->
+
+      <!-- ~ Timer Section Start -->
+      <section class="timer_container">
+        <h3>Don't Miss Out - The Sale Will Ends In</h3>
+        <h1>
+          04<span>days</span> : 23<span>hours</span> : 59<span>minutes</span> :
+          60<span>seconds</span>
+        </h1>
+      </section>
+      <!-- ~ Timer Section End -->
+
+      <!-- ~ Featured Items Start -->
+      <section class="featured_items padding">
+        <h1 class="heading"><span>F</span>eatured <span>I</span>tems</h1>
+        <div class="cards_container container"></div>
+      </section>
+      <!-- ~ Featured Items End -->
+
+      <!-- ~Sale Banner Section Start -->
+      <div class="sale_banner padding container">
+        <div class="text">
+          <h1>
+            UK Store: <span>Your<br />New Go-to-Online<br />Shoes Store</span>
+          </h1>
+          <p>
+            Best deals of <span>2024</span> has out. Get more than
+            <span>30%</span> off on entire stock
+          </p>
+          <button>Grab the deal now</button>
+        </div>
+        <div class="image">
+          <img src="Images/shoes.png" alt="" />
+        </div>
+      </div>
+      <!-- ~Sale Banner Section End -->
+
+      <!-- ~ Top rated items Start -->
+      <section class="top_rated padding">
+        <h1 class="heading">
+          <span>T</span>op <span>R</span>ated <span>I</span>tems
+        </h1>
+        <div class="cards_container container"></div>
+      </section>
+      <!-- ~ Top rated items End -->
+
+      <!-- ~ Information Banners Start -->
+      <section class="information_banners padding container">
+        <div class="banner">
+          <h4>Famous Shoes</h4>
+          <button>Shop Now</button>
+        </div>
+        <div class="banner">
+          <h4>Special Collection</h4>
+          <button>Shop Now</button>
+        </div>
+      </section>
+      <!-- ~ Information Banners End -->
+
+      <!-- ~ Products Section Start -->
+      <section class="all_products padding">
+        <h1 class="heading"><span>S</span>hoes <span>C</span>ollection</h1>
+        <div class="filters_container">
+          <div class="product_filter">
+            <img
+              src="Images/all.png"
+              alt=""
+              width="45"
+              height="45"
+              data-brand="all"
+            />
+            <p>All</p>
+          </div>
+          <div class="product_filter">
+            <img
+              src="Images/nike.png"
+              alt=""
+              width="45"
+              height="45"
+              data-brand="NIKE"
+            />
+            <p>Nike</p>
+          </div>
+          <div class="product_filter">
+            <img
+              src="Images/adidas.png"
+              alt=""
+              width="45"
+              height="45"
+              data-brand="ADIDAS"
+            />
+            <p>Adidas</p>
+          </div>
+          <div class="product_filter">
+            <img
+              src="Images/puma.png"
+              alt=""
+              width="45"
+              height="45"
+              data-brand="PUMA"
+            />
+            <p>Puma</p>
+          </div>
+          <div class="product_filter">
+            <img
+              src="Images/reebok.png"
+              alt=""
+              width="45"
+              height="45"
+              data-brand="REEBOK"
+            />
+            <p>Reebok</p>
+          </div>
+          <div class="product_filter">
+            <img
+              src="Images/nb.png"
+              alt=""
+              width="45"
+              height="45"
+              data-brand="NB"
+            />
+            <p>New Balance</p>
+          </div>
+          <div class="product_filter">
+            <img
+              src="Images/jordan.png"
+              alt=""
+              width="45"
+              height="45"
+              data-brand="JORDAN"
+            />
+            <p>Jordan</p>
+          </div>
+          <div class="product_filter">
+            <img
+              src="Images/fila.png"
+              alt=""
+              width="45"
+              height="45"
+              data-brand="FILA"
+            />
+            <p>Fila</p>
+          </div>
+          <div class="product_filter">
+            <img
+              src="Images/vans.png"
+              alt=""
+              width="45"
+              height="45"
+              data-brand="Vans"
+            />
+            <p>Vans</p>
+          </div>
+        </div>
+        <div class="cards_container container"></div>
+        <div class="pagination">
+          <div class="counting_button"></div>
+        </div>
+      </section>
+      <!-- ~ Products Section End -->
+      <!-- ~ Testimonial Section Start -->
+      <section class="testimonial padding">
+        <h1 class="heading"><span>C</span>ustomer's <span>R</span>eviews</h1>
+
+        <div class="testimonial_wrapper">
+          <div class="testimonial_slide">
+            <div class="slide_content">
+              <img src="Images/user1.jpg" width="70" height="70" alt="" />
+              <h4>User 1</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
+                veniam ea voluptates consequuntur, omnis facere perferendis,
+                vero quis dicta expedita fugiat nostrum culpa necessitatibus
+                quod.
+              </p>
+            </div>
+          </div>
+          <div class="testimonial_slide">
+            <div class="slide_content">
+              <img src="Images/user2.jpg" width="70" height="70" alt="" />
+              <h4>User 2</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
+                veniam ea voluptates consequuntur, omnis facere perferendis,
+                vero quis dicta expedita fugiat nostrum culpa necessitatibus
+                quod.
+              </p>
+            </div>
+          </div>
+          <div class="testimonial_slide">
+            <div class="slide_content">
+              <img src="Images/user3.jpg" width="70" height="70" alt="" />
+              <h4>User 3</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
+                veniam ea voluptates consequuntur, omnis facere perferendis,
+                vero quis dicta expedita fugiat nostrum culpa necessitatibus
+                quod.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ~ Testimonial Section End -->
+
+      <!-- ~ Footer Section Start -->
+      <footer>
+        <nav class="container footer_container">
+          <h2>UK STORE</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+            repudiandae voluptatibus, rerum blanditiis eius id fuga? Blanditiis
+            quod dolorum odio, consequuntur maiores aut pariatur veritatis, esse
+            id minima, veniam earum. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Quos tempora dolore, veritatis quia quasi
+            voluptatibus officiis aliquid. Quisquam, nam consequatur?
+          </p>
+          <div class="social_icons">
+            <div class="icon"><i class="fa-brands fa-facebook-f"></i></div>
+            <div class="icon"><i class="fa-brands fa-x-twitter"></i></div>
+            <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+            <div class="icon"><i class="fa-brands fa-google"></i></div>
+          </div>
+        </nav>
+        <section class="newsletter">
+          <input type="email" placeholder="Enter your email" />
+          <button>
+            Subscribe <span><i class="fa-solid fa-paper-plane"></i></span>
+          </button>
+        </section>
+      </footer>
+      <!-- ~ Footer Section End -->
+    </main>
+  </body>
+</html>

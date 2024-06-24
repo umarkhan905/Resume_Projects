@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.main {
+  width: 100%;
+}
+
+.heading {
+  text-align: center;
+  padding: 10px 0;
+  color: limegreen;
+}
+
+.calc {
+  width: 30%;
+  height: 320px;
+  margin: auto;
+  border-radius: 10px;
+  /* box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3),
+    -2px -2px 3px rgba(0, 0, 0, 0.3); */
+  border: 3px solid lightgreen;
+}
+
+.options {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.options .to label,
+.options .from label {
+  text-transform: capitalize;
+  padding: 0 5px;
+  color: limegreen;
+}
+
+.options .to select,
+.options .from select {
+  outline: none;
+}
+
+.input_container input {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  height: 40px;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid limegreen;
+  padding: 0 4px;
+  background: rgba(144, 238, 144, 0.21);
+}
+
+.input_container input::placeholder {
+  color: limegreen;
+}
+
+.btn {
+  display: block;
+  width: 80%;
+  height: 40px;
+  margin: auto;
+  background: rgba(144, 238, 144, 0.893);
+  color: #fff;
+  border-radius: 5px;
+  border: 2px solid limegreen;
+  outline: none;
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: all .2s;
+}
+
+.btn:hover {
+  background: #90ee90;
+}

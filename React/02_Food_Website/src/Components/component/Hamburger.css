@@ -1,0 +1,30 @@
+/* .hamburger-menu span{
+    display: block;
+    width: 10px;
+    height: 2px;
+    margin-bottom: 3px;
+    background: #000;
+} */
+.hamburger{
+    display: none;
+    width: 100%;
+}
+.hamburger .hamlist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    transition: all .5s;
+}
+.hamburger .hamlist li a{
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 5px 18px;
+    color: #fff;
+}
+@media screen and (max-width:768px) {
+    .hamburger{
+        display: block;
+    }
+}

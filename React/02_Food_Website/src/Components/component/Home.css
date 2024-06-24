@@ -1,0 +1,66 @@
+.home{
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    background: url(../assets/home.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.home .slogan{
+    color: #fff;
+    font-family: 'Merienda', cursive;
+    font-size: 2rem;
+}
+.home .slogan span{
+    color: #ff4500;
+}
+.para{
+    width: 700px;
+    text-align: center;
+    padding: 5px 10px;
+    color: #fff;
+    font-size: .9rem;
+}
+.btn{
+    display: block;
+    margin: 10px 0;
+    padding: 5px 30px;
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 2px ;
+    transition: all .2s;
+}
+.btn:hover{
+    outline: 4px solid #000;
+    outline-offset: 0;
+    background: #ff4500;
+}
+@media screen and (max-width:768px) {
+    .home .slogan{
+        font-size: 1.8rem;
+    }
+    .para{
+        width: 100%;
+        font-size: .8rem;
+    }
+}
+@media screen and (max-width:550px) {
+    .home .slogan{
+        font-size: 1.4rem;
+    }
+}
+@media screen and (max-width:424px) {
+    .home .slogan{
+        font-size: 5vw;
+    }
+    .para{
+        font-size: 3vw;
+    }
+}

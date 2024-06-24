@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1>Students Record</h1>
+            <ul class="navlist">
+                <li data-tab1="tab1">Add Record</li>
+                <li data-tab1="tab2">View Records</li>
+                <li data-tab1="tab3">Search Record</li>
+                <li data-tab1="tab4">Delete record</li>
+            </ul>
+        </nav>
+        <div class="message">
+            <img src="img/accept.png" alt="">
+            <p>your record has been submitted.</p>
+        </div>
+    </header>
+
+    <div class="enter-std tabs" data-tab="tab1">
+        <div class="form-container">
+            <img src="img/user.png" alt="">
+            <form action="" class="addstd-form">
+                <label for="">Roll No</label>
+                <input type="number" placeholder="Enter Roll No" class="add-rollno">
+                <p class="rollno-error error-message"></p>
+                <br>
+                <label for="">Student Name</label>
+                <input type="text" placeholder="Enter Name" class="add-name">
+                <p class="name-error error-message"></p>
+                <br>
+                <label for="">Student Marks</label>
+                <input type="number" placeholder="Enter Marks" class="add-marks">
+                <p class="marks-error error-message"></p>
+                <br>
+                <label for="">Status</label>
+                <input type="text" placeholder="Enter Status:Pass/Fail" class="add-status">
+                <p class="status-error error-message"></p>
+
+                <button class="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="view-std tabs" data-tab="tab2">
+        <div class="view-std-container">
+            <div class="record-image">
+                <img src="img/database.png" alt="">
+                <h2>Student Record</h2>
+            </div>
+            <div class="std-record">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Roll No</th>
+                            <th>Name</th>
+                            <th>Marks</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="search-std tabs" data-tab="tab3">
+        <div class="search-std-container">
+            <div class="search-img">
+                <img src="img/search.png" alt="">
+                <h2>search record</h2>
+            </div>
+            <div class="search-form-container">
+                <form action="" class="search-form">
+                        <input type="number" class="search-input" placeholder="Enter Roll No">
+                        <button class="search">Search</button>
+                </form>
+                <p class="search-error"></p>
+            </div>
+            <div class="search-std-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Roll No</th>
+                            <th>Name</th>
+                            <th>Marks</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="delete-std tabs" data-tab="tab4">
+        <div class="delete-std-container">
+            <div class="delete-img">
+                <img src="img/delete.png" alt="">
+                <h2>Delete Record</h2>
+            </div>
+            <div class="delete-form-container">
+                <form action="" class="delete-form">
+                        <input type="number" class="delete-input" placeholder="Enter Roll No">
+                        <button class="delete">Delete</button>
+                </form>
+                <p class="delete-error"></p>
+            </div>
+            <div class="delete-std-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Roll No</th>
+                            <th>Name</th>
+                            <th>Marks</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

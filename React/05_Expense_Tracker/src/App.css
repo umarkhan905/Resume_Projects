@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.container .main>h1 {
+  font-size: 25px;
+  /* text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); */
+}
+
+.container .main h2 {
+  font-size: 15px;
+  text-transform: capitalize;
+  padding-top: 10px;
+  font-weight: 600;
+}
+
+.balance {
+  font-size: 19px;
+  font-weight: 700;
+  padding: 5px 0;
+}
+
+.body {
+  width: 300px;
+  height: 80px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1),
+    -1px -1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+
+.expense,
+.income {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.income h1,
+.expense h1 {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 3px 0;
+}
+
+.income p {
+  font-size: 15px;
+  font-weight: 500;
+  color: limegreen;
+}
+
+.expense p {
+  font-size: 15px;
+  font-weight: 500;
+  color: crimson;
+}
+
+.history_container {
+  padding: 20px 0;
+}
+
+.history_container h1 {
+  font-size: 15px;
+  text-transform: capitalize;
+  padding: 5px;
+  font-weight: 600;
+}
+
+
+.transaction_container h1 {
+  font-size: 15px;
+  text-transform: capitalize;
+  padding-top: 10px;
+  font-weight: 600;
+}
+
+.description {
+  padding: 10px 0;
+}
+
+.description h1,
+.amount h1 {
+  font-size: 14px;
+  padding: 3px 0;
+  font-weight: 300;
+}
+
+.description input,
+.amount input,
+.history_container input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #f4f4f4;
+  padding: 6px 5px;
+}
+
+.option {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.option label {
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 13px;
+  font-weight: 300;
+  padding: 0 4px;
+}
+
+.option input {
+  accent-color: #222;
+}
+
+.btn {
+  width: 100%;
+  padding: 6px 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  background: #b16df1;
+  text-transform: capitalize;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px 0;
+  padding: 5px 10px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  text-transform: capitalize;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.items_container {
+  padding-top: 15px;
+  height: 80px;
+  overflow: auto;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}

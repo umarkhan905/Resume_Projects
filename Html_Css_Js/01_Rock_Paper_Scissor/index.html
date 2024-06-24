@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stone-Paper-Scissor--By Umar Khan</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <div class="loader">
+        <img src="img/loading.gif" alt="" />
+    </div>
+
+    <div class="first d-flex align-items-center justify-content-center">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-md-12">
+                <form action="" class="card-form">
+                    <input type="text" class="name" placeholder="Enter Your Name" />
+                    <button class="name-btn">Enter</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="container-fluid">
+            <center>
+                <h1 class="title">Welome To Game</h1>
+            </center>
+            <div class="row title-row">
+                <div class="col-md-6">
+                    <h2 class="float-start">
+                        Name: <span class="userName">Umar Khan</span>
+                    </h2>
+                    <h2 class="float-end">Score: <span class="userScore">0</span></h2>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="float-start">
+                        Name: <span class="compName">Computer</span>
+                    </h2>
+                    <h2 class="float-end">Score: <span class="compScore">0</span></h2>
+                </div>
+            </div>
+
+            <div class="row main-row">
+                <div class="userChoices col-6">
+                    <div class="choices userValue" style="border-right: 1px solid #fff">
+                        <img src="img/stone.png" alt="" value="stone" />
+                        <img src="img/paper.png" alt="" value="paper" />
+                        <img src="img/scissor.png" alt="" value="scissor" />
+                    </div>
+                    <p class="mychoice">Your Choice: <span class="user"></span></p>
+                </div>
+                <div class="userChoices col-6">
+                    <div class="choices">
+                        <img src="img/stone.png" alt="" />
+                        <img src="img/paper.png" alt="" />
+                        <img src="img/scissor.png" alt="" />
+                    </div>
+                    <p class="compchoice">
+                        Computer Choice: <span class="comp"></span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row result">
+                <div class="col d-flex align-items-center justify-content-center h-100">
+                    <p class="winner"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="last">
+        <div class="container">
+            <div class="annoucement">
+                <img src="" alt="" class="win-img" />
+                <h1 class="wins"></h1>
+            </div>
+            <button class="play-again">Play Again</button>
+        </div>
+    </div>
+
+    <iframe width="481" height="361" src="https://www.youtube.com/embed/v_Ojax1iByc" title="Some Nice Fights"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+</body>
+
+</html>

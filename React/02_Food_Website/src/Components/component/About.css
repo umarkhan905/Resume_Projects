@@ -1,0 +1,82 @@
+.padding{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .content{
+    width: 70%;
+    padding: 10px 20px;
+}
+.container .content h2{
+    text-transform: capitalize;
+    color: orangered;
+}
+.container .content p{
+    color: gray;
+    padding: 5px 0;
+}
+.btn{
+    outline:2px solid orangered;
+    border:2px solid orangered;
+    color: #000;
+}
+.btn:hover{
+    border: 2px solid #fff;
+    color: #fff;
+}
+.container .image{
+    width: 30%;
+}
+.container .image img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+@media screen and (max-width:768px) {
+    .container {
+       flex-direction: column-reverse;
+       gap: 20px;
+    }
+    .container .content{
+        width: 90%;
+    }
+    .container .image{
+        width: 40%;
+    }
+}
+@media screen and (max-width:652px) {
+    .container {
+       flex-direction: column-reverse;
+       gap: 20px;
+    }
+    .container .content{
+        width: 100%;
+        font-size: 2.5vw;
+        padding: 10px 15px;
+    }
+}
+@media screen and (max-width:424px) {
+    .container {
+       flex-direction: column-reverse;
+       gap: 20px;
+    }
+    .container .image{
+        width: 50%;
+    }
+}
+@media screen and (max-width:320px) {
+    .container {
+       flex-direction: column-reverse;
+       gap: 20px;
+    }
+    .container .content{
+        font-size: 3.5vw;
+    }
+    .container .image{
+        width: 60%;
+    }
+}

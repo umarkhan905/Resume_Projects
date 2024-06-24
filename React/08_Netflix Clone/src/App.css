@@ -1,0 +1,294 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background: #000;
+    color: #fff;
+}
+
+.hor_line {
+    width: 100%;
+    height: 8px;
+    background: #232323;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(./assets/background.avif);
+    color: #fff;
+    position: relative;
+}
+
+.navbar .nav_list {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.logo {
+    width: 180px;
+    height: 110px;
+}
+
+.btn_promary {
+    background: #e50914;
+    color: #fff;
+    padding: 9px 16px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-weight: 600;
+    transition: .2s;
+}
+
+.btn_promary:hover {
+    background: #c11119;
+}
+
+.hero {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 60px 0;
+}
+
+.main_heading {
+    font-size: 2.9rem;
+    letter-spacing: .1px;
+    font-weight: 900;
+    padding-top: 100px;
+}
+
+.sub_heading1 {
+    font-size: 1.5rem;
+    font-weight: 450;
+    padding: 10px 0;
+}
+
+.sub_heading2 {
+    font-size: 1.3rem;
+    font-weight: 450;
+    padding: 5px 0;
+}
+
+.input_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.email_container {
+    position: relative;
+    z-index: 0;
+}
+
+.input_label {
+    position: absolute;
+    top: 18px;
+    left: 10px;
+    color: #ffffffd8;
+    font-size: 16px;
+    font-weight: 400;
+    z-index: -1;
+    transition: all .2s;
+}
+
+.input_email {
+    width: 380px;
+    height: 58px;
+    border: none;
+    border: .5px solid #ffffff84;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 0 10px;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    z-index: 0;
+}
+
+.input_email:focus {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+}
+
+.input_email:focus~.input_label {
+    top: 5px;
+    font-size: 13px;
+    z-index: 1;
+}
+
+.input_email:valid~.input_label {
+    top: 5px;
+    font-size: 13px;
+    z-index: 1;
+}
+
+
+.input_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 58px;
+    background: #e50914;
+    color: #fff;
+    border: none;
+    outline: none;
+    margin: 0 10px;
+    border-radius: 5px;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.input_btn:hover {
+    background: #c11119;
+}
+
+.angle {
+    font-size: 27px;
+    font-weight: lighter;
+}
+
+.main_container {
+    width: 80%;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    position: relative;
+    z-index: 0;
+}
+
+.main_content {
+    /* padding: 150px 0; */
+    width: 50%;
+}
+
+.image_container {
+    width: 50%;
+}
+
+.main_content .main_heading {
+    padding-top: 0;
+}
+
+.video {
+    position: absolute;
+    top: 32px;
+    left: 56%;
+    z-index: -1;
+}
+
+.faq_container {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.accordian_container {
+    margin: 30px 0;
+}
+
+.accordian_heading {
+    width: 80%;
+    height: 80px;
+    background: #2D2D2D;
+    margin: 7px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.accordian_heading p {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.accordian_heading .plus {
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.accordian_heading:hover {
+    background: #414141;
+}
+
+.accordian_body {
+    width: 80%;
+    background: #2D2D2D;
+    padding: 20px;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: justify;
+
+}
+
+.accordian_body p {
+    padding: 10px 0;
+}
+
+.footer_container {
+    min-height: 400px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.link {
+    width: 200px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #B3B3B3;
+    text-underline-offset: 2px;
+}
+
+.links_container {
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+select {
+    padding: 6px 15px;
+    background: transparent;
+    color: #fff;
+
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+select:focus {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+}
+
+.bottom {
+    padding: 20px 0;
+    color: #B3B3B3;
+    font-size: 1rem;
+}
